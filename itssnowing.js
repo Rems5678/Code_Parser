@@ -1,18 +1,16 @@
 const body = document.querySelector('body');
-
-
 let keycodesToCheck = [];
 const keycodes = [73, 84, 83, 32, 83, 67, 72, 78, 79, 73, 78, 71];
 let counter = 0;
 document.addEventListener('keydown', function(e) {
     
     if (e.keyCode === keycodes[counter]) {
-      console.log(e.keyCode);
+      // console.log(e.keyCode);
       counter++;
       keycodesToCheck.push(e.keyCode);
     }
     else {
-      console.log('combo broke');
+      // console.log('combo broke');
       counter = 0;
       keycodesToCheck = [];
     }
@@ -38,8 +36,4 @@ document.addEventListener('keydown', function(e) {
     
   }
   
-})
-
-function itsSchnoing () {
-  
-}
+});
